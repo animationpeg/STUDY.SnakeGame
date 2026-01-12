@@ -1,0 +1,7 @@
+G:\Users\Phil-J\Documents\2025_Coding\projects\STUDY.SnakeGame\STUDY.SnakeGame\bin\Debug\STUDY.SnakeGame.exe.config
+G:\Users\Phil-J\Documents\2025_Coding\projects\STUDY.SnakeGame\STUDY.SnakeGame\bin\Debug\STUDY.SnakeGame.exe
+G:\Users\Phil-J\Documents\2025_Coding\projects\STUDY.SnakeGame\STUDY.SnakeGame\bin\Debug\STUDY.SnakeGame.pdb
+G:\Users\Phil-J\Documents\2025_Coding\projects\STUDY.SnakeGame\STUDY.SnakeGame\obj\Debug\STUDY.SnakeGame.csproj.AssemblyReference.cache
+G:\Users\Phil-J\Documents\2025_Coding\projects\STUDY.SnakeGame\STUDY.SnakeGame\obj\Debug\STUDY.SnakeGame.csproj.CoreCompileInputs.cache
+G:\Users\Phil-J\Documents\2025_Coding\projects\STUDY.SnakeGame\STUDY.SnakeGame\obj\Debug\STUDY.SnakeGame.exe
+G:\Users\Phil-J\Documents\2025_Coding\projects\STUDY.SnakeGame\STUDY.SnakeGame\obj\Debug\STUDY.SnakeGame.pdb
