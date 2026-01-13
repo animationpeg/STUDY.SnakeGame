@@ -18,6 +18,7 @@ namespace STUDY.SnakeGame
             int frameDelay = 100; // In milliseconds
             Direction movementDirection = Direction.Down;
             int score = 0;
+            Queue<Direction> inputQueue = new Queue<Direction>(); // Create queue for input buffer
 
             List<Coord> snakePosHistory = new List<Coord>();
             int tailLength = 1;
@@ -62,7 +63,7 @@ namespace STUDY.SnakeGame
                 {
                     score = 0;
                     tailLength = 1;
-                    snakePos = new Coord(10, 1);
+                    snakePos = new Coord(10, 5);
                     snakePosHistory.Clear();
                     movementDirection = Direction.Down;
                     continue;
@@ -76,10 +77,10 @@ namespace STUDY.SnakeGame
                 }
 
 
-                    // Record the path of the snake in a list
-                    snakePosHistory.Add(snakePos);
+                // Record the path of the snake in a list
+                snakePosHistory.Add(snakePos);
 
-                if (snakePosHistory.Count > tailLength )
+                if (snakePosHistory.Count > tailLength)
                     snakePosHistory.RemoveAt(0);
 
                 // Collect player input to direct the snake up, down, left, right
@@ -90,21 +91,26 @@ namespace STUDY.SnakeGame
                     if (Console.KeyAvailable)
                     {
                         ConsoleKey key = Console.ReadKey(true).Key;
-                        Direction newDirection = movementDirection;
-
                         switch (key)
                         {
                             case ConsoleKey.LeftArrow:
-                                    newDirection = Direction.Left; break;
+                                if (inputQueue.Count < 5) inputQueue.Enqueue(Direction.Left); break;
                             case ConsoleKey.RightArrow:
-                                    newDirection = Direction.Right; break;
+                                if (inputQueue.Count < 5) inputQueue.Enqueue(Direction.Right); break;
                             case ConsoleKey.UpArrow:
-                                    newDirection = Direction.Up; break;
+                                if (inputQueue.Count < 5) inputQueue.Enqueue(Direction.Up); break;
                             case ConsoleKey.DownArrow:
-                                    newDirection = Direction.Down; break;
+                                if (inputQueue.Count < 5) inputQueue.Enqueue(Direction.Down); break;
                         }
-                        if (!movementDirection.IsOpposite(newDirection))
-                            movementDirection = newDirection;
+                    }
+                }
+                // Process queue inputs if available
+                if (inputQueue.Count > 0)
+                {
+                    Direction nextDirection = inputQueue.Dequeue();
+                    if (!movementDirection.IsOpposite(nextDirection))
+                    {
+                        movementDirection = nextDirection;
                     }
                 }
             }
