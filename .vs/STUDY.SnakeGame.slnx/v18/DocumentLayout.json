@@ -7,18 +7,12 @@
       "RelativeMoniker": "D:0:0:{2A6F866C-46A6-4C8F-B7EE-A9A4C5782E19}|STUDY.SnakeGame\\STUDY.SnakeGame.csproj|solutionrelative:study.snakegame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A6F866C-46A6-4C8F-B7EE-A9A4C5782E19}|STUDY.SnakeGame\\STUDY.SnakeGame.csproj|g:\\users\\phil-j\\documents\\2025_coding\\projects\\study.snakegame\\study.snakegame\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A6F866C-46A6-4C8F-B7EE-A9A4C5782E19}|STUDY.SnakeGame\\STUDY.SnakeGame.csproj|solutionrelative:study.snakegame\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A6F866C-46A6-4C8F-B7EE-A9A4C5782E19}|STUDY.SnakeGame\\STUDY.SnakeGame.csproj|G:\\Users\\Phil-J\\Documents\\2025_Coding\\projects\\STUDY.SnakeGame\\study.snakegame\\coord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A6F866C-46A6-4C8F-B7EE-A9A4C5782E19}|STUDY.SnakeGame\\STUDY.SnakeGame.csproj|solutionrelative:study.snakegame\\coord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|STUDY.SnakeGame||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A6F866C-46A6-4C8F-B7EE-A9A4C5782E19}|STUDY.SnakeGame\\STUDY.SnakeGame.csproj|g:\\users\\phil-j\\documents\\2025_coding\\projects\\study.snakegame\\study.snakegame\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+      "AbsoluteMoniker": "D:0:0:{2A6F866C-46A6-4C8F-B7EE-A9A4C5782E19}|STUDY.SnakeGame\\STUDY.SnakeGame.csproj|g:\\users\\phil-j\\documents\\2025_coding\\projects\\study.snakegame\\study.snakegame\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A6F866C-46A6-4C8F-B7EE-A9A4C5782E19}|STUDY.SnakeGame\\STUDY.SnakeGame.csproj|solutionrelative:study.snakegame\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,8 +25,12 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Direction.cs",
               "DocumentMoniker": "G:\\Users\\Phil-J\\Documents\\2025_Coding\\projects\\STUDY.SnakeGame\\STUDY.SnakeGame\\Direction.cs",
               "RelativeDocumentMoniker": "STUDY.SnakeGame\\Direction.cs",
@@ -45,19 +43,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "STUDY.SnakeGame",
-              "DocumentMoniker": "G:\\Users\\Phil-J\\Documents\\2025_Coding\\projects\\STUDY.SnakeGame\\STUDY.SnakeGame\\STUDY.SnakeGame.csproj",
-              "RelativeDocumentMoniker": "STUDY.SnakeGame\\STUDY.SnakeGame.csproj",
-              "ToolTip": "G:\\Users\\Phil-J\\Documents\\2025_Coding\\projects\\STUDY.SnakeGame\\STUDY.SnakeGame\\STUDY.SnakeGame.csproj",
-              "RelativeToolTip": "STUDY.SnakeGame\\STUDY.SnakeGame.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-12T12:45:04.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Coord.cs",
               "DocumentMoniker": "G:\\Users\\Phil-J\\Documents\\2025_Coding\\projects\\STUDY.SnakeGame\\STUDY.SnakeGame\\Coord.cs",
               "RelativeDocumentMoniker": "STUDY.SnakeGame\\Coord.cs",
@@ -74,9 +60,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\Users\\Phil-J\\Documents\\2025_Coding\\projects\\STUDY.SnakeGame\\STUDY.SnakeGame\\Program.cs",
               "RelativeDocumentMoniker": "STUDY.SnakeGame\\Program.cs",
-              "ToolTip": "G:\\Users\\Phil-J\\Documents\\2025_Coding\\projects\\STUDY.SnakeGame\\STUDY.SnakeGame\\Program.cs*",
-              "RelativeToolTip": "STUDY.SnakeGame\\Program.cs*",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAswGgAAAAVAAAAAAAAAA==",
+              "ToolTip": "G:\\Users\\Phil-J\\Documents\\2025_Coding\\projects\\STUDY.SnakeGame\\STUDY.SnakeGame\\Program.cs",
+              "RelativeToolTip": "STUDY.SnakeGame\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBAAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-12T12:13:45.196Z",
               "EditorCaption": ""

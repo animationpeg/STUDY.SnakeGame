@@ -54,7 +54,10 @@ namespace STUDY.SnakeGame
                 {
                     tailLength++; // Grows tail
                     score++;
-                    applePos = RandApplePos(gridDimensions); // Creates new apple in random location
+                    do // Creates new apple in random location, avoiding the snakes body
+                    {
+                    applePos = RandApplePos(gridDimensions);
+                    } while (snakePosHistory.Contains(applePos) || snakePos.Equals(applePos));
                 }
                 // Check for game over conditions
                 else if (snakePos.X == 0 || snakePos.Y == 0 ||
