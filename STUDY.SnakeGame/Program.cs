@@ -11,19 +11,21 @@ namespace STUDY.SnakeGame
     {
         static void Main()
         {
+            Console.CursorVisible = false; // Hides cursor in the console
             Coord gridDimensions = new Coord(50, 20);
-            Coord snakePos = new Coord(10, 1);
+            Coord snakePos = new Coord(10, 5);
             Coord applePos = RandApplePos(gridDimensions);
-            int frameDelay = 50; // In milliseconds
+            int frameDelay = 100; // In milliseconds
             Direction movementDirection = Direction.Down;
             int score = 0;
 
             List<Coord> snakePosHistory = new List<Coord>();
             int tailLength = 1;
+            int tailMaxLength = (gridDimensions.X - 2) * (gridDimensions.Y - 2); // max length of snake
 
             while (true)
             {
-                Console.Clear();
+                Console.SetCursorPosition(0, 0);
                 Console.WriteLine($"Score: {score}");
                 snakePos = snakePos.Move(movementDirection);
 
@@ -35,13 +37,13 @@ namespace STUDY.SnakeGame
                         Coord currentCoord = new Coord(x, y);
 
                         if (snakePos.Equals(currentCoord) || snakePosHistory.Contains(currentCoord))
-                            Console.Write("■");
+                            Console.Write("■■");
                         else if (applePos.Equals(currentCoord))
-                            Console.Write("a");
+                            Console.Write("aa");
                         else if (x == 0 || y == 0 || x == gridDimensions.X - 1 || y == gridDimensions.Y - 1)
-                            Console.Write("#");
+                            Console.Write("##");
                         else
-                            Console.Write(" ");
+                            Console.Write("  ");
                     }
                     Console.WriteLine();
                 }
@@ -65,10 +67,17 @@ namespace STUDY.SnakeGame
                     movementDirection = Direction.Down;
                     continue;
                 }
+                // Check for game victory conditions
+                else if (tailLength == tailMaxLength)
+                {
+                    Console.WriteLine($"Congratulations! You beat snake with a score of {score}!");
+                    Console.ReadLine();
+                    break;
+                }
 
 
-                // Record the path of the snake in a list
-                snakePosHistory.Add(snakePos);
+                    // Record the path of the snake in a list
+                    snakePosHistory.Add(snakePos);
 
                 if (snakePosHistory.Count > tailLength )
                     snakePosHistory.RemoveAt(0);
